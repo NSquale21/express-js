@@ -1,0 +1,22 @@
+{
+  "name": "express_js",
+  "version": "1.0.0",
+  "description": "Covalence ExpressJS Lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NSquale21/express-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSquale21/express-js/issues"
+  },
+  "homepage": "https://github.com/NSquale21/express-js#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
