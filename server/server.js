@@ -18,8 +18,8 @@ app.post('/register', (req, res) => {
 	fs.readFile(path.join(__dirname, './entrants/data.json'), (err, data) => {
 		if (err) console.log(err);
 		const registerUser = JSON.parse(data);
-		registerUser.entrants.push(req.body);
-		fs.writeFile(path.join(__dirname, './entrants/data.json'), JSON.stringify(registerUser, null, 2), (err, data) => {
+		registerUser.push(req.body);
+		fs.writeFile(path.join(__dirname, './entrants/data.json'), JSON.stringify(registerUser, null, 2), (err) => {
 			if (err) console.log(err);
 		});
 		res.send('Registered!');
